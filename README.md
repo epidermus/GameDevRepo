@@ -36,6 +36,6 @@
 
 - Confirm Rehearsal time and Event reservation | Sat, OCT 17 | Austin | waiting
 
-- REHURSAL | Fri, OCT 30 | Everyone | waiting
+- REHEARSAL | Fri, OCT 30 | Everyone | waiting
 
 - THE EVENT | Sat, NOV 7 | Everyone | waiting

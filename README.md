@@ -16,8 +16,6 @@
 
 |Goal | Due By | Assigned to | Status|
 |--------|--------|-------------|-------|
-
-
 |Rough draft of game | n/a | Traae | complete|
 | Email Sign up / Website | Sat, OCT 3 | Austin | in progess|
 |Anncouncement | Sat, OCT 3 | Austin | in progress|

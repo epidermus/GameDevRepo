@@ -22,9 +22,9 @@
 |Finish Game | Sat, OCT 17th | Traae | in progress|
 |Polished Game (from a software & perfessionalism perspective) | Sat, OCT 24 | Everyone | waiting|
 |Confirm Rehearsal time and Event reservation | Sat, OCT 17 | Austin | waiting|
+|Confirm Rehearsal time and Event reservation | Sat, OCT 17 | Austin | waiting|
 |Github Presentation | Sat, OCT 24 | Austin | waiting|
 |Development Presentation | Sat, OCT 24 | Traae | waiting|
 |Full intergrated presentaiton | Sat, OCT 30| Traae | waiting|
-|Confirm Rehearsal time and Event reservation | Sat, OCT 17 | Austin | waiting|
 |REHEARSAL | Fri, OCT 30 | Everyone | waiting|
 |THE EVENT | Sat, NOV 7 | Everyone | waiting|

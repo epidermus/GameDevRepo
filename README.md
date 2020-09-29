@@ -34,7 +34,7 @@
 
 - Full intergrated presentaiton | Sat, OCT 30| Traae | waiting
 
-- Confirm Rehursal time and Event reservation | Sat, OCT 17 | Austin | waiting
+- Confirm Rehearsal time and Event reservation | Sat, OCT 17 | Austin | waiting
 
 - REHURSAL | Fri, OCT 30 | Everyone | waiting
 

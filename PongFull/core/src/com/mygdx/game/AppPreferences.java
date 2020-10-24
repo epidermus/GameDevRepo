@@ -5,6 +5,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
 
 public class AppPreferences {
+    // A libGDX preference file reads into a hashmap.
+
     // Constants for preference keys
     private static final String PREF_MUSIC_ENABLED = "music.enabled";
     private static final String PREF_MUSIC_VOLUME = "music.volume";
@@ -20,11 +22,13 @@ public class AppPreferences {
     // Getters & Setters
 
     public boolean isMusicEnabled() {
+        // .getBoolean to tell it how to read the definition, defValue fill it in if none is there.
         return getPrefs().getBoolean(PREF_MUSIC_ENABLED, true);
     }
 
     public void setMusicEnabled(boolean musicEnabled) {
         getPrefs().putBoolean(PREF_MUSIC_ENABLED, musicEnabled);
+        // .flush() must be called for changes to take effect
         getPrefs().flush();
     }
 

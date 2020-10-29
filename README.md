@@ -3,8 +3,11 @@
 
 ## To Do
 
-- make game the presentation
-- make a github presentation
+- Incorporate game components, and polish
+- Ready coade for presenting
+- do the following for presentation
+
+
 
 
 

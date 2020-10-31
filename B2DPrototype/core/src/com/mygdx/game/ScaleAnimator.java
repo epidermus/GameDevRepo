@@ -8,7 +8,7 @@ import com.badlogic.gdx.utils.TimeUtils;
 
 public class ScaleAnimator {
 
-    public float deltaScale = 2f;
+    public float deltaScale = .5f;
     public float timeToExpand = 100f; // ms
     public float timeToContract = 300f; // ms
 
@@ -54,16 +54,6 @@ public class ScaleAnimator {
 
     void applyScale(float scale, Vector2 realPos) {
         sprite.setScale(scale);
-
-        // reposition sprite down and left
-
-        float newWidth = scale * sprite.getWidth();
-        float newHeight = scale * sprite.getHeight();
-
-        float xOffset = (newWidth - sprite.getWidth()) / -2;
-        float yOffset = (newHeight - sprite.getHeight()) / -2;
-
-        sprite.setPosition(realPos.x + xOffset, realPos.y + yOffset);
     }
 
     public void startAnimation() {

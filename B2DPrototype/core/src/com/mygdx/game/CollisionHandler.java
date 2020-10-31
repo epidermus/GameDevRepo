@@ -2,5 +2,8 @@ package com.mygdx.game;
 
 public interface CollisionHandler {
 
-    void onCollision(Object userData);
+    void beginContact(Object userData);
+    void endContact(Object userData);
+    void preSolve(Object userData);
+    void postSolve(Object userData);
 }

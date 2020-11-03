@@ -1,34 +1,25 @@
-# Game Dev Repo  
+# Welcome
 
-currently, you don't need to worry about downloading anything.
+## Saturday, November 7th, 1pm - 4pm.
+https://isu.zoom.us/j/83294067041?pwd=ajQvVlhONXNuRUJQbno0eDBaZnhmQT09
 
-This is to everyone who's signed up for our Intro to game Development Workshop,
-which is just one week away!
+## Things to Setup Prior
+If you have setup questions, feel free to email Traae bloxtraa@.edu
+We'll also be in the Zoom call before the presentation to help.
 
-As a reminder, we're presenting next Saturday, November 7th, 1pm - 4pm.
+### Java
+Get Java - https://www.java.com/en/
 
-There are a few things you will want to have ready, if you intend to code-along and participate.
+Tutorail for the Enviroment Variables - 
+https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html
 
-1. Java
-If you haven't used java before, you'll need to install it.
+### LibGDX
+Badlogicgames website - https://libgdx.badlogicgames.com/
+Download the setup file - https://libgdx.badlogicgames.com/download.html
+Launch the setup file and create a new project, we'll be developing for desktop,
+so no need to worry about the other systems for now. Fell free to add all of the editional tool packages.
 
-You may need to update your Java Home Environment Variables,
-here's a tutorial.
-
-2. Intellij
-We'll be coding using Jetbrains's Intellij IDE.
-If you need it, here's a link to the education pack
-
-3. LibGDX
-Finally, you'll need LibGDX itself. Download and extract it to the gdx-setup.jar
-Once you have that, you can run it and set up a project to open in intellij.
-
-4. Our Github
-We'll be putting up files, assets, examples, and helpful resources for use during and after
-the presentation.
-
+### InteliJ
+Jetbrains Website - https://www.jetbrains.com/
+Enducational License Package - https://www.jetbrains.com/community/education/#students
 If you need any help, we'll actually be in Zoom answering questions at noon, before the event.
-
-Finally, Here is your invite to the Zoom Call.
-
-We'll see you soon.

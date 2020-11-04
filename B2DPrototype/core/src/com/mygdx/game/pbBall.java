@@ -34,6 +34,7 @@ public class pbBall extends PongBody implements CollisionHandler {
             PongBody pb = (PongBody) userData;
 
             if (pb.name.equalsIgnoreCase("left wall") || pb.name.equalsIgnoreCase("right wall")) {
+                B2DPong.instance.shake.start();
                 Gdx.app.log("collision", "Someone scored");
             }
         }

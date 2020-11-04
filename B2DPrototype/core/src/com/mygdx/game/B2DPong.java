@@ -12,7 +12,9 @@ import com.badlogic.gdx.physics.box2d.World;
 
 public class B2DPong extends ApplicationAdapter {
 
-    public final Vector2 pSize = new Vector2(16, 9); // meters
+    public final Vector2 size = new Vector2(16, 9); // meters
+
+    public static B2DPong instance;
 
     private SpriteBatch batch;
 
@@ -22,6 +24,7 @@ public class B2DPong extends ApplicationAdapter {
     PongBody[] walls;
 
     OrthographicCamera cam;
+    CameraShake shake;
 
     World world;
     Box2DDebugRenderer b2dr;
@@ -29,20 +32,23 @@ public class B2DPong extends ApplicationAdapter {
 
     @Override
     public void create() {
+        instance = this;
         batch = new SpriteBatch();
 
         // setup box2d world
         world = new World(new Vector2(0, -9.8f), false);
         world.setContactListener(new B2DContactListener());
+
         b2dr = new Box2DDebugRenderer();
 
         // setup camera
         // ref https://github.com/libgdx/libgdx/wiki/Orthographic-camera
         cam = new OrthographicCamera();
-        cam.viewportHeight = pSize.y;
-        cam.viewportWidth = pSize.x;
+        cam.viewportHeight = size.y;
+        cam.viewportWidth = size.x;
         cam.position.set(0, 0, 0);
         cam.update();
+        shake = new CameraShake(cam, 500, .75f, 250);
 
         // setup paddles
         // leftPaddle = new B2DPaddle();
@@ -55,8 +61,8 @@ public class B2DPong extends ApplicationAdapter {
         rightPaddle.setBody(B2DBuilder.createPhysicsBox(world, rightPaddle.size, 0, false, false, false, rightPaddle));
 
         float wallOffset = 1f; // m
-        leftPaddle.setPosition(new Vector2((-pSize.x / 2) + wallOffset, 0));
-        rightPaddle.setPosition(new Vector2((pSize.x / 2) - wallOffset, 0));
+        leftPaddle.setPosition(new Vector2((-size.x / 2) + wallOffset, 0));
+        rightPaddle.setPosition(new Vector2((size.x / 2) - wallOffset, 0));
 
         // setup ball
         Vector2 ballSize = new Vector2(.2f, .2f);
@@ -76,12 +82,12 @@ public class B2DPong extends ApplicationAdapter {
 
     private PongBody[] buildWalls() {
         walls = new PongBody[4];
-        Vector2 yBoundarySize = new Vector2(pSize.x, 1);
-        Vector2 xBoundarySize = new Vector2(1, pSize.y);
-        Vector2 ceilingPosition = new Vector2(0, pSize.y / 2);
-        Vector2 floorPosition = new Vector2(0, -pSize.y / 2);
-        Vector2 leftWallPosition = new Vector2(-pSize.x / 2, 0);
-        Vector2 rightWallPosition = new Vector2(pSize.x / 2, 0);
+        Vector2 yBoundarySize = new Vector2(size.x, 1);
+        Vector2 xBoundarySize = new Vector2(1, size.y);
+        Vector2 ceilingPosition = new Vector2(0, size.y / 2);
+        Vector2 floorPosition = new Vector2(0, -size.y / 2);
+        Vector2 leftWallPosition = new Vector2(-size.x / 2, 0);
+        Vector2 rightWallPosition = new Vector2(size.x / 2, 0);
         Color wallColor = Color.DARK_GRAY;
 
         PongBody left = new PongBody(world, "left wall", xBoundarySize, wallColor);
@@ -115,13 +121,13 @@ public class B2DPong extends ApplicationAdapter {
     public void render() {
         Gdx.gl.glClearColor(0, 0, 0, 0);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        update(Gdx.graphics.getDeltaTime());
 
         cam.update();
         batch.setProjectionMatrix(cam.combined);
 
-        update(Gdx.graphics.getDeltaTime());
 
-        // b2dr.render(world, cam.combined);
+        b2dr.render(world, cam.combined);
 
         batch.begin();
 
@@ -145,6 +151,7 @@ public class B2DPong extends ApplicationAdapter {
         handleInput();
         world.step(delta, 6, 2);
 
+        shake.update();
         leftPaddle.updatePosition();
         rightPaddle.updatePosition();
         ball.updatePosition();

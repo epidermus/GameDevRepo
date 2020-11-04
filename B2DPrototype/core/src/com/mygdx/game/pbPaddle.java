@@ -9,12 +9,14 @@ import com.badlogic.gdx.physics.box2d.World;
 public class pbPaddle extends PongBody implements CollisionHandler {
 
     private final float speed = 5f;
-    private ScaleAnimator anim;
+
+    private Motion scalingMotion;
 
     public pbPaddle(World _world, String _name, Vector2 _size, Color _color) {
         super(_world, _name, _size, _color);
 
-        anim = new ScaleAnimator(sprite, Interpolation.linear);
+        scalingMotion = new Motion(1f, .5f, 250, true, Interpolation.elastic);
+        scalingMotion.setABDuration(75f);
     }
 
     public void setYVelocity(float input) {
@@ -29,13 +31,16 @@ public class pbPaddle extends PongBody implements CollisionHandler {
     @Override
     public void draw(SpriteBatch batch) {
         super.draw(batch);
-        anim.update(position);
+        // sprite.setScale(scaleInterpolator.update());
+        sprite.setScale(scalingMotion.update());
     }
 
     @Override
     public void beginContact(Object userData) {
         if (userData instanceof pbBall) {
-            anim.startAnimation();
+            // scaleInterpolator.startAnimation();
+            scalingMotion.start();
+
             pbBall b = (pbBall) userData;
 
             // the ball will scale its own velocity anyway

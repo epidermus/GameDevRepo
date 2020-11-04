@@ -57,6 +57,7 @@ public class PongBody {
     public void updatePosition() {
         position = body.getPosition();
         sprite.setPosition(position.x - size.x / 2, position.y - size.y / 2);
+        //sprite.setPosition(position.x, position.y);
     }
 
     public void setPosition(Vector2 pos) {

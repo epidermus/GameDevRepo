@@ -3,7 +3,7 @@
 ## Java
 Get Java - https://www.java.com/en/
 
-Tutorail for the Enviroment Variables - 
+Tutorail for the Enviroment Variables -
 https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html
 
 ## LibGDX
@@ -15,6 +15,8 @@ Jetbrains Website - https://www.jetbrains.com/
 Enducational License Package - https://www.jetbrains.com/community/education/#students
 
 ## Assets
+
+##Packr
 
 Skins - https://github.com/Traae/gdx-skins
 
@@ -28,3 +30,5 @@ Citations
 - https://www.youtube.com/watch?v=e3VSVZn4BHg&t=125s&ab_channel=TheCodingTrain
 - https://github.com/libgdx/libgdx/wiki/Bitmap-fonts
 - https://refactoring.guru/
+
+https://github.com/libgdx/packr/releases

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PongFull.iml" filepath="$PROJECT_DIR$/.idea/modules/PongFull.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/PongFull.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/PongFull.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/PongFull.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/PongFull.core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/PongFull.core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/core/PongFull.core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/PongFull.desktop.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/PongFull.desktop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/PongFull.desktop.main.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/PongFull.desktop.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/PongFull.desktop.test.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/PongFull.desktop.test.iml" />
+    </modules>
+  </component>
+</project>

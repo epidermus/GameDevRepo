@@ -3,7 +3,7 @@
 ## Java
 Get Java - https://www.java.com/en/
 
-Tutorail for the Enviroment Variables - 
+Tutorail for the Enviroment Variables -
 https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html
 
 ## LibGDX
@@ -19,6 +19,8 @@ Enducational License Package - https://www.jetbrains.com/community/education/#st
 Skins - https://github.com/Traae/gdx-skins
 
 Sound Effects - https://www.bfxr.net/
+
+## Packr
 
 Citations
 - https://github.com/libgdx/libgdx/wiki

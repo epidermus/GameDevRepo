@@ -1,0 +1,10 @@
+1) What is Gradle
+	dependency manager
+		manages all the libraries and plugins your project needs.
+		keeps consistency
+		allows anyone to build your project
+	build manager
+	Jar exporter
+2) What is Packr?
+	Packages your app into a executable
+	Contains a JRE, or java runtime environment, so that anyone can run your program regardless of what it has.
